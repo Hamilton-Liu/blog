@@ -1,0 +1,22 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={`笔记 | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>&#31508;&#35760;</h1>
+			<p>&#36825;&#37324;&#21487;&#20197;&#25918;&#26085;&#24120;&#31508;&#35760;&#12289;&#25216;&#26415;&#25688;&#24405;&#21644;&#35835;&#20070;&#25972;&#29702;&#12290;</p>
+			<p><a href={`${import.meta.env.BASE_URL}blog/`}>&#26597;&#30475;&#29616;&#26377;&#25991;&#31456;</a></p>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -1,0 +1,21 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={`链接 | ${SITE_TITLE}`} description="常用链接、朋友站点和参考资源。" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>&#38142;&#25509;</h1>
+			<p>&#36825;&#37324;&#21487;&#20197;&#25918;&#24120;&#29992;&#38142;&#25509;&#12289;&#26379;&#21451;&#31449;&#28857;&#21644;&#21442;&#32771;&#36164;&#28304;&#12290;</p>
+		</main>
+		<Footer />
+	</body>
+</html>

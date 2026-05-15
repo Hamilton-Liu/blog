@@ -1,19 +1,15 @@
 ---
-import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
-
-const base = import.meta.env.BASE_URL.endsWith('/')
-	? import.meta.env.BASE_URL
-	: `${import.meta.env.BASE_URL}/`;
 ---
 
 <header>
 	<nav>
-		<h2><a href={base}>{SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">&#39318;&#39029;</HeaderLink>
-			<HeaderLink href="/blog">&#25991;&#31456;</HeaderLink>
-			<HeaderLink href="/about">&#20851;&#20110;</HeaderLink>
+			<HeaderLink href="/photography">&#25668;&#24433;</HeaderLink>
+			<HeaderLink href="/notes">&#31508;&#35760;</HeaderLink>
+			<HeaderLink href="/projects">&#39033;&#30446;</HeaderLink>
+			<HeaderLink href="/links">&#38142;&#25509;</HeaderLink>
 		</div>
 	</nav>
 </header>
@@ -24,23 +20,15 @@ const base = import.meta.env.BASE_URL.endsWith('/')
 		background: white;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
 	nav {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		max-width: 960px;
 		margin: 0 auto;
 	}
 	nav a {
-		padding: 1em 0.5em;
+		padding: 1em 0.75em;
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
@@ -51,6 +39,18 @@ const base = import.meta.env.BASE_URL.endsWith('/')
 	}
 	.internal-links {
 		display: flex;
-		gap: 0.25rem;
+		justify-content: center;
+		gap: 0.75rem;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+	@media (max-width: 520px) {
+		header {
+			padding: 0 0.5em;
+		}
+		.internal-links {
+			justify-content: flex-start;
+			width: 100%;
+		}
 	}
 </style>

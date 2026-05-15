@@ -1,0 +1,21 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={`摄影 | ${SITE_TITLE}`} description="摄影作品与影像记录。" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>&#25668;&#24433;</h1>
+			<p>&#36825;&#37324;&#21487;&#20197;&#25918;&#32622;&#25668;&#24433;&#20316;&#21697;&#12289;&#30456;&#20876;&#21644;&#24433;&#20687;&#35760;&#24405;&#12290;</p>
+		</main>
+		<Footer />
+	</body>
+</html>

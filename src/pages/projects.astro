@@ -1,0 +1,21 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={`项目 | ${SITE_TITLE}`} description="项目、作品和长期构建记录。" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>&#39033;&#30446;</h1>
+			<p>&#36825;&#37324;&#21487;&#20197;&#25918;&#20320;&#30340;&#39033;&#30446;&#12289;&#20316;&#21697;&#21644;&#38271;&#26399;&#26500;&#24314;&#35760;&#24405;&#12290;</p>
+		</main>
+		<Footer />
+	</body>
+</html>
