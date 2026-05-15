@@ -1,6 +1,6 @@
 # Personal Blog
 
-Astro static blog optimized for GitHub Pages. Posts live in `src/content/blog/` and can be written in Markdown or MDX.
+Astro static blog optimized for GitHub Pages. Notes live in `src/content/notes/` and can be written in Markdown or MDX.
 
 ## Local Development
 
@@ -33,12 +33,13 @@ For a user page repository named `<your-github-username>.github.io`, the workflo
 
 ## Writing
 
-Create a new file under `src/content/blog/`:
+Create a new file under `src/content/notes/`:
 
 ```md
 ---
 title: "My Post"
 description: "Short summary for SEO and RSS."
+category: tech
 pubDate: 2026-05-15
 ---
 
