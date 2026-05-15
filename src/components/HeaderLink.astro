@@ -10,7 +10,8 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
 const base = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
-const linkHref = base + href.replace(/^\//, '');
+const path = href.replace(/^\//, '');
+const linkHref = path === '' ? base : `${base}${path}/`;
 ---
 
 <a href={linkHref} class:list={[className, { active: isActive }]} {...props}>
